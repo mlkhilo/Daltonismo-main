@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url(https://wallpapers.com/images/hd/best-football-background-vkr4qy2utkrsn5rj.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    backdrop-filter: blur(2px);
+    color: #00ffe0;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #00ffe0;
+    text-align: center;
+    padding: 1em 0;
+    box-shadow: 0 0 10px #00ffe0;
+}
+
+main {
+    flex: 1;
+    padding: 2em;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 1em;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+}
+
+.filter-section {
+    margin-bottom: 1.5em;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.image-item {
+    flex: 1;
+    margin: 1em;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.image-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #00ffe0;
+}
+
+.image-item img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border: 2px solid #00ffe0;
+    padding: 8px;
+    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: filter 0.3s;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    padding: 1em 0;
+    margin-top: auto;
+    color: #00ffe0;
+    box-shadow: 0 0 10px #00ffe0;
+}
+
+/* Estilos para diferentes filtros de daltonismo */
+.filter-image.achromatomaly {
+    filter: grayscale(100%);
+}
+
+.filter-image.deuteranomaly {
+    filter: hue-rotate(180deg);
+}
+
+.filter-image.tritanomaly {
+    filter: sepia(100%) saturate(300%) hue-rotate(-50deg);
+}
+
+p {
+    color: #00ffe0;
+    text-shadow: 0 0 5px #00ffe0;
+}
