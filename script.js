@@ -18,3 +18,11 @@ document.getElementById('color-filter').addEventListener('change', function() {
         }
     });
 });
+
+function changeFontSize(change) {
+    const root = document.documentElement;
+    const currentSize = parseFloat(getComputedStyle(root).getPropertyValue('--font-size'));
+    const newSize = Math.max(10, currentSize + change);
+    root.style.setProperty('--font-size', `${newSize}px`);
+  }
+  

@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daltonismo</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <h1>Daltonismo De Futebol</h1>
     </header>
+
     <main>
         <div class="filter-section">
             <label for="color-filter">Filtro de Daltonismo:</label>
@@ -20,25 +22,34 @@
                 <option value="tritanomaly">Tritanomalia</option>
             </select>
         </div>
+
+        <div class="font-controls">
+            <button onclick="changeFontSize(-2)">Diminuir Fonte</button>
+            <button onclick="changeFontSize(2)">Aumentar Fonte</button>
+        </div>
+
         <div class="image-container">
             <div class="image-item">
-                <img src="https://i.scdn.co/image/ab6761610000e5eb53314b0b73aff313933e8f5d" alt="Descrição da imagem 1" class="filter-image" width="400">
-                <p>A acromatopsia é uma condição visual rara em que a pessoa não consegue perceber nenhuma cor, vendo apenas em tons de cinza.</p>
+                <img src="https://i.scdn.co/image/ab6761610000e5eb53314b0b73aff313933e8f5d" alt="Barcelona" class="filter-image" width="400">
+                <p>Barcelona</p>
             </div>
             <div class="image-item">
-                <img src="https://swissotelnankaiosaka.com/wp-content/uploads/sites/168/2024/10/thumbnail_tablecheck.png" alt="Descrição da imagem 2" class="filter-image" width="500">
-                <p>A deuteranomalia é um tipo de daltonismo em que a pessoa tem dificuldade em distinguir entre tons de verde e vermelho devido à anomalia nos cones sensíveis ao verde na retina.</p>
+                <img src="https://swissotelnankaiosaka.com/wp-content/uploads/sites/168/2024/10/thumbnail_tablecheck.png" alt="Cerezo Osaka" class="filter-image" width="500">
+                <p>Cerezo Osaka</p>
             </div>
             <div class="image-item">
-                <img src="https://image.discovery.indazn.com/ca/v2/ca/image?id=0517dec6-83b1-4b8d-a34d-a9b29532b7fa&quality=70" alt="Descrição da imagem 3" class="filter-image" width="500">
-                <p>A tritanomalia é um tipo de daltonismo em que a pessoa tem dificuldade em distinguir entre tons de azul e verde, além de confundir o amarelo com tons de rosa, devido à anomalia nos cones sensíveis ao azul na retina.</p>
+                <img src="https://image.discovery.indazn.com/ca/v2/ca/image?id=0517dec6-83b1-4b8d-a34d-a9b29532b7fa&quality=70" alt="Al Nassr" class="filter-image" width="500">
+                <p>Al Nassr</p>
             </div>
-            </div>
-            <p> Referências: <a href="https://drauziovarella.uol.com.br/doencas-e-sintomas/daltonismo/">Daltonismo - Dráuzio Varella</a></p>
+        </div>
+
+        <p>Referências: <a href="https://www.sofascore.com/pt/">Sofascore</a></p>
     </main>
+
     <footer>
         Desenvolvido por Higor Batista
     </footer>
+
     <script src="script.js"></script>
 </body>
 </html>
